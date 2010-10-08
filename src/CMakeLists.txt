@@ -1,5 +1,5 @@
 
-FILE(GLOB SRCS *.cpp)
+FILE(GLOB SRCS *.cpp *.h)
 
 ADD_EXECUTABLE(pixelland ${SRCS})
 

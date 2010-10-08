@@ -10,13 +10,23 @@ class Application
 {
 public:
   Application();
-  ~Application();
+  virtual ~Application();
 
   void run();
 
-private:
+  virtual void onFrame();
+  virtual void setupScene();
 
+  int m_width;
+  int m_height;
+
+  static Renderer* renderer();
+  static Application* inst();
+
+private:
   static Renderer* g_rootRenderer;
+  static Application* g_rootApplication;
+
   Renderer* m_renderer;
 
   void loadSettings();

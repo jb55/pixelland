@@ -1,9 +1,9 @@
 
-#include "Application.h"
+#include "TestApp.h"
 
 int main(int argc, const char *argv[])
 {
-  pixelland::Application app;
+  pixelland::TestApp app;
   app.run();
   return 0;
 }
