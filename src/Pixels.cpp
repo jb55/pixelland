@@ -1,4 +1,4 @@
-#include "pixels.h"
+#include "Pixels.h"
 
 namespace pixelland {
 
